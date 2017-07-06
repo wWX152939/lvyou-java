@@ -35,9 +35,9 @@ public class LYAddAttentionBean {
 			 while(rs2.next())
 				{
 				 type=1;
-				 sb.append("<error>");
+				 sb.append("<succ>");
 				 sb.append("0");
-				 sb.append("</error>");
+				 sb.append("</succ>");
 				}
 			 if(type==0){
 			 st.executeUpdate("insert into fxattention_table(host_id,other_id) values("+hostid+","+otherid+")");
